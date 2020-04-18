@@ -11,30 +11,162 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-       <!--Header navegação-->
-       <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-          <a class="navbar-brand" href="#"><strong>Restaurante</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="home.html">Início <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="carpadio.html">Cardapio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contato</a>
-              </li>
-            </ul>
+       <!-- Ínico Header -->
+       <header> <!-- cabeçalho -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo" >
+            <div class="navbar-header">                
+              <a class="navbar-brand" href="#"><img src="img/logo/logo.png"  alt="" style="    width: 79px;
+                height: 67px; margin-top: -17px "></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cardapio.html">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receitas.html">Receitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                </ul>
           </div>
         </nav>
-      
+       
       </header>
-  <!--Main Navigation-->
+    <!--Fim do header-->
+
+    <!-- inicio da página do cardápio -->
+    <div class="cardapio"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text">
+                    <h1>Bem vindos ao nosso cardápio</h1>  <!-- Título -->
+                    <div class="description">Esperamos que gostem</div>  <!-- descrição -->
+                </div>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <!-- Início dos filtros -->
+                    <div id="options">
+                        <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                            <li><a href="#entrada" data-option-value="*" class="selected">Todos</a></li>
+                            <li><a href="#filter" data-option-value=".entrada">Entrada</a></li>
+                            <li><a href="#filter" data-option-value=".principal">Prato Principal</a></li>
+                            <li><a href="#filter" data-option-value=".guarnicao">Guarnição</a></li>
+                            <li><a href="#filter" data-option-value=".pratobase">Prato base</a></li>
+                            <li><a href="#filter" data-option-value=".sobremesa">Sobremesa</a></li>
+                        </ul>
+                    </div>
+                    <!-- Fim doa filtros -->
+                    
+                    <!-- Início das fotos -->
+                    <div class="make6columns food-effect nospace" style="position: relative; overflow: hidden; height: 980px; !important" >
+                       
+                        <figure class="item photos" id= 'entrada'>
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <!-- Nova Linha-->
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <!-- Nova Linha-->
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <!-- Nova Linha-->
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <!-- Nova Linha-->
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                        <figure class="item photos">
+                            <div class="picture">
+                                <img src="img/cardapio/entradas/1.jpg" alt=""/> 
+                            </div>
+                        </figure>
+                      
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da página do cardápio-->
+   
+  
+    <!-- footer02-->
+    <div class="footer">
+        
+        <div class="row2">
+            <div class="container">
+                <!-- Row 3 Starts -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8">  <a href=""></a>     <a href=""></a> </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 designby"> </div>
+                </div>
+                <!-- Row 3 Ends -->
+            </div>
+        </div>
+    </div>
+  
     </body>
 </html>
