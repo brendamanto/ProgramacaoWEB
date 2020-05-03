@@ -284,14 +284,12 @@ header {
 }
 .contato .contact-form form .btn-default {
     color: #fff;
-    background-color: #039be5;
-    border-color: #039be5;
+    background-color: #e2725b;
+    border-color: #e2725b;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.contato .contact-form form {
-    padding-top: 60px;
-}
+
 .contato .contact-form form .btn {
     display: inline-block;
     padding: 12px 40px;
@@ -316,7 +314,7 @@ header {
     text-transform: uppercase;
 }
 .contato .contact-form form .btn-default:hover {
-    color: #039be5;
+    color: #e2725b;
     background-color: transparent;
-    border-color: #039be5;
+    border-color: #e2725b;
 }
