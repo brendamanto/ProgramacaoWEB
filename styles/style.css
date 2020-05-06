@@ -23,12 +23,21 @@ header {
 }
 .h-img-01 {
     background-attachment: fixed;
-    background-image: url(../img/banner/1.jpg); /* imagem do banner*/
+    background-image: url(../img/banner/1.jpg); /* imagem do banner home*/
     background-repeat: repeat-y;
     background-position: 50% 0;
     background-size: cover;
     height: 440px;
 }
+.h-img-02 {
+    background-attachment: fixed;
+    background-image: url(../img/banner/1.jpg); /* imagem do banner receitas*/
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+    background-size: cover;
+    height: 440px;
+}
+
 
 .footer .row2 {
     font-size: 14px; /* coloquei aqui o tamanho da fonte caso formos escrever algo*/
@@ -133,9 +142,18 @@ header {
     border: 1px solid #FFF;
     padding-top: 12px;
 }
+/* food-effect usado nas imagens*/
 .food-effect.nospace figure.item {
     padding: 0px;
     text-align: center;
+}
+
+.food-effect .picture {
+    background-color: #e2725b;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
 }
 .food-effect .item-h2 {
     height: auto!important
@@ -147,92 +165,23 @@ header {
     transition: all 0.3s;
     position: relative;
 }
-.food-effect figure.item {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.food-effect figure.item .info {
-    padding-top: 22px;
-    padding-bottom: 50px;
-    text-align: left;
-}
-.food-effect figure.item .info .caption {
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
-    text-transform: uppercase;
-}
-.food-effect figure.item .info .categories {
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: #000;
-    text-transform: uppercase;
-}
-.food-effect.nospace figure.item {
-    padding: 0px;
-    text-align: center;
-}
-.food-effect .item-w2 {
-    width: 100%!important;
-}
-.food-effect .item-h2 {
-    height: auto!important
-}
-.food-effect .picture {
-    background-color: #e2725b;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    position: relative;
-}
-.food-effect .picture .caption {
-    background-color: #fff;
-    padding-top: 4px;
-    padding-bottom: 8px;
-    font-weight: 400;
-}
+
+/*esse cara deixa a tabela bonita, não mecher aqui mostra a cor na imagem em que o mouse está passando*/
 .food-effect .item:hover img {
     opacity: 0.4;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-.food-effect .item-w2 {
-    width: 100%!important;
-}
-.food-effect .item-h2 {
-    height: auto!important
-}
-.food-effect .picture {
-    background-color: #e2725b;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    position: relative;
-}
-.food-effect .picture .caption {
-    background-color: #fff;
-    padding-top: 4px;
-    padding-bottom: 8px;
-    font-weight: 400;
-}
-.food-effect .item:hover img {
-    opacity: 0.4;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
+/*esse cara deixa a tabela bonita, não mecher aqui, deixa a tabela no formato que está*/
 .food-effect figure {
     float: left;
     width: 30%;
     height: auto!important;
     overflow: hidden;
-    /*background-color: #000;*/
+    
 }
+/*esse cara deixa a tabela bonita, não mecher aqui, deixa a imagem no formato que está*/
 .food-effect figure img {
     max-width: 100%;
     height: auto;
@@ -242,12 +191,130 @@ header {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+.receitas-pagina {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.receitas-pagina .post .button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+/*esse cara deixa o risco no final*/
 
-.isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
+.receitas-pagina .post {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e2e2e2;
+}
+/*altera a cor abaixo da imagem*/
+.receitas-pagina .post .description {
+    font-size: 16px;
+    color: #666666;
+}
+/*altera o botão*/
+.receitas-pagina .post .button a {
+    color: #e2725b;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #e2725b;
+    background-color: transparent;
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.mapa {
+    background-attachment: fixed;
+    background-image: url(../img/contato/mapafundo.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.contato {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.contato .herotext {
+    padding-bottom: 70px;
+}
+.contato .herotext h1 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #e2725b;
+    padding-bottom: 12px;
+}
+.contato .herotext .description {
+    font-size: 46px;
+    text-align: center;
+    line-height: 55px;
+    color: #323232;
+}
+.contato .contact-form form {
+    padding-top: 60px;
+}
+.contato .contact-form form .form-control {
+    letter-spacing: 3px;
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    text-transform: uppercase;
+}
+.contato .contact-form form .btn-default {
+    color: #fff;
+    background-color: #e2725b;
+    border-color: #e2725b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contato .contact-form form .btn {
+    display: inline-block;
+    padding: 12px 40px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.contato .contact-form form .btn-default:hover {
+    color: #e2725b;
+    background-color: transparent;
+    border-color: #e2725b;
 }
