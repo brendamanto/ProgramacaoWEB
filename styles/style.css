@@ -37,6 +37,15 @@ header {
     background-size: cover;
     height: 440px;
 }
+.home .text h2{
+    font-size: 66px; 
+    text-align: center;
+    color: #ff574d;
+
+}
+.home .text h1{
+    text-align: center;
+}
 
 
 .footer .row2 {
